@@ -1,6 +1,5 @@
-
 #!python
-
+import os
 
 
 def check_reboot():
@@ -8,8 +7,11 @@ def check_reboot():
     """
     return os.path.exist("/run/reboot-required")
 
-    
+
 def main():
     print("Hello!")
+
+    return True
+
 
 main()
